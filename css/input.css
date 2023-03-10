@@ -4,12 +4,23 @@
 
 /* global css */
 html {
-    /* font-family: 'DM Serif Display', serif; */
-    /* font-family: 'Karla', sans-serif; */
     font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+h4 {
 
+    font-family: 'DM Serif Display', serif;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+
+}
+
+/* nav */
 .hamburger {
     width: 1.9rem;
     height: 1.9rem;
@@ -75,4 +86,13 @@ html {
 .checkbox:checked+label>.hamburger>.bar4 {
     transform: rotate(-45deg)translate(70%, -70%);
     left: -27%;
+}
+
+/* header */
+.header-text {
+    /* background: url('../images/bg-pattern-intro-left-mobile.svg') left top /50% no-repeat; */
+}
+
+header {
+    /* url('../images/bg-pattern-intro-right-mobile.svg') right bottom /10% no-repeat */
 }
