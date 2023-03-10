@@ -25,7 +25,9 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="flex items-center justify-between p-6 bg-white">
+    <nav
+      class="flex items-center justify-between p-6 py-5 bg-white relative z-20"
+    >
       <!-- logo -->
       <img src="./images/logo.svg" alt="logo.svg" />
       <!-- hamburger/close btn -->
@@ -55,7 +57,7 @@
         alt="image-intro-mobile.jpg"
       />
       <div
-        class="header-text text-center py-20 px-5 space-y-4 bg-clDarkViolet text-white relative -z-20"
+        class="header-text text-center py-20 px-5 space-y-4 bg-clDarkViolet text-white relative -z-20 mb-20"
       >
         <!-- background img -->
         <img
@@ -80,15 +82,36 @@
     </header>
     <!-- end header -->
 
-    How we work Blog Account View plans View plans We’re different Snappy
-    Process Our application process can be completed in minutes, not hours.
-    Don’t get stuck filling in tedious forms. Affordable Prices We don’t want
-    you worrying about high monthly costs. Our prices may be low, but we still
-    offer the best coverage possible. People First Our plans aren’t full of
-    conditions and clauses to prevent payouts. We make sure you’re covered when
-    you need it. Find out more about how we work How we work Our company How we
-    work Why Insure? View plans Reviews Help me FAQ Terms of use Privacy policy
-    Cookies Contact Sales Support Live chat Others Careers Press Licenses
+    <!-- aside -->
+    <aside class="fixed h-full w-full top-0 left-0 z-10 invisible">
+      <ul
+        class="flex flex-col text-center text-white space-y-6 font-bold uppercase tracking-widest"
+      >
+        <li>
+          <a href="#">How we work</a>
+        </li>
+
+        <li>
+          <a href="#"> Blog</a>
+        </li>
+        <li>
+          <a href="#">Account</a>
+        </li>
+        <li>
+          <a class="border-2 p-4 w-5/6 inline-block" href="#">View plans</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- end aside -->
+    View plans We’re different Snappy Process Our application process can be
+    completed in minutes, not hours. Don’t get stuck filling in tedious forms.
+    Affordable Prices We don’t want you worrying about high monthly costs. Our
+    prices may be low, but we still offer the best coverage possible. People
+    First Our plans aren’t full of conditions and clauses to prevent payouts. We
+    make sure you’re covered when you need it. Find out more about how we work
+    How we work Our company How we work Why Insure? View plans Reviews Help me
+    FAQ Terms of use Privacy policy Cookies Contact Sales Support Live chat
+    Others Careers Press Licenses
     <!-- 
     <footer class="attribution">
       Challenge by
