@@ -8,3 +8,71 @@ html {
     /* font-family: 'Karla', sans-serif; */
     font-size: 16px;
 }
+
+
+.hamburger {
+    width: 1.9rem;
+    height: 1.9rem;
+    position: relative;
+    padding: 1.2rem;
+}
+
+.hamburger .bar {
+    position: absolute;
+    width: 1.4rem;
+    height: .2rem;
+    border-radius: .5rem;
+    transition: all 300ms ease-in;
+    opacity: 1;
+}
+
+.bar1 {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 300%);
+    transform-origin: 5%;
+}
+
+.bar2,
+.bar3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bar3 {
+    right: 50%;
+    visibility: hidden;
+}
+
+.bar4 {
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -300%);
+    /* transform-origin: 5%; */
+}
+
+.checkbox:checked+label .bar {
+    width: 2rem;
+}
+
+.checkbox:checked+label>.hamburger>.bar1 {
+    transform: rotate(45deg) translate(-10%, 455%);
+    left: 50%;
+}
+
+.checkbox:checked+label>.hamburger>.bar3 {
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+.checkbox:checked+label>.hamburger>.bar2 {
+    transform: rotate(-45deg)translate(-50%, -160%);
+    top: 25%;
+    opacity: 0;
+}
+
+.checkbox:checked+label>.hamburger>.bar4 {
+    transform: rotate(-45deg)translate(70%, -70%);
+    left: -27%;
+}
