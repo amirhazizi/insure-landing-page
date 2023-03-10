@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global css */
+html {
+    /* font-family: 'DM Serif Display', serif; */
+    /* font-family: 'Karla', sans-serif; */
+    font-size: 16px;
+}
