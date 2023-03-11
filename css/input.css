@@ -36,6 +36,26 @@ li {
 
 }
 
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cl-DarkViolet);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 2rem;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8a8a8;
+}
+
 /* nav */
 .hamburger {
     width: 1.9rem;
@@ -133,6 +153,27 @@ footer {
 .footer-container {
     width: min(90vw, 1140px);
     margin: 0 auto;
+}
+
+
+/* active/diactive submenu */
+.slide {
+    transform: translateY(-30%);
+    transition: all 250ms;
+    transition-timing-function: ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+.no-sctoll {
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* queris */
