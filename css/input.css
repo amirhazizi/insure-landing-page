@@ -42,6 +42,7 @@ li {
     height: 1.9rem;
     position: relative;
     padding: 1.2rem;
+
 }
 
 .hamburger .bar {
@@ -114,7 +115,7 @@ aside {
 
 /* section */
 section {
-    width: min(90vw, 1240px);
+    width: min(90vw, 1140px);
     margin: 10rem auto;
 }
 
@@ -127,4 +128,9 @@ section {
 footer {
     background: url('../images/bg-pattern-footer-mobile.svg') top left /100% no-repeat;
     background-color: var(--cl-VeryLightGray);
+}
+
+.footer-container {
+    width: min(90vw, 1140px);
+    margin: 0 auto;
 }
