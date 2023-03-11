@@ -137,8 +137,14 @@ footer {
 
 /* queris */
 @media (min-width:768px) {
+
+    .nav-content,
+    .header-text {
+        width: min(90vw, 1100px);
+    }
+
     header {
-        height: 50vh;
+        height: 30rem;
     }
 
     .section-2 {
@@ -151,6 +157,11 @@ footer {
 }
 
 @media (min-width:1024px) {
+    header {
+
+        height: 40rem;
+    }
+
     .section-2 {
         background-size: 50%;
     }
