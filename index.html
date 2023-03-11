@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="p-6 py-5 bg-white z-20">
+    <nav class="p-6 py-5 bg-white relative z-30">
       <div class="relative flex items-center justify-between max-w-5xl mx-auto">
         <!-- logo -->
         <img src="./images/logo.svg" alt="logo.svg" />
@@ -73,7 +73,7 @@
     <!-- end nav -->
 
     <!-- header -->
-    <header class="md:relative">
+    <header class="md:relative md:grid md:place-items-center bg-clDarkViolet">
       <!-- mobile intro img -->
       <img
         class="w-full md:hidden"
@@ -82,40 +82,59 @@
       />
       <!-- desktop intro img -->
       <img
-        class="hidden w-2/5 absolute -bottom-20 left-3/4 -translate-x-2/3 md:block"
+        class="hidden w-5/12 absolute -bottom-20 left-3/4 -translate-x-1/2 z-10 md:block lg:w-2/5 xl:w-fit xl:-bottom-32"
         src="./images/image-intro-desktop.jpg"
         alt="image-intro-mobile.jpg"
       />
-      <div class="header-text text-center py-20 px-5 bg-clDarkViolet">
+      <div class="header-text text-center py-20 px-5 relative md:w-full">
+        <!-- mobile background img -->
+        <img
+          class="absolute top-0 left-0 z-20 md:hidden"
+          src="./images/bg-pattern-intro-left-mobile.svg"
+          alt="bg-pattern-intro-left-mobile.svg"
+        />
+        <img
+          class="absolute -bottom-1/3 right-0 z-20 translate-y-10 md:hidden"
+          src="./images/bg-pattern-intro-right-mobile.svg"
+          alt=""
+        />
+        <!-- dektop background img -->
+        <img
+          class="hidden md:block absolute top-2/3 left-0 z-20 h-96 lg:translate-y-14 xl:h-fit"
+          src="./images/bg-pattern-intro-left-desktop.svg"
+          alt=""
+        />
+        <img
+          class="hidden md:block absolute top-0 right-0 -translate-y-16 z-20 h-80 lg:h-5/6 lg:-translate-y-20 xl:h-fit xl:-translate-y-44"
+          src="./images/bg-pattern-intro-right-desktop.svg"
+          alt=""
+        />
         <div
           class="text-center space-y-9 text-white relative md:text-left md:max-w-5xl md:mx-auto"
         >
-          <!-- background img -->
-          <img
-            class="absolute top-0 left-0 z-10"
-            src="./images/bg-pattern-intro-left-mobile.svg"
-            alt="bg-pattern-intro-left-mobile.svg"
-          />
-          <img
-            class="absolute -bottom-1/3 right-0 z-10 translate-y-10"
-            src="./images/bg-pattern-intro-right-mobile.svg"
-            alt=""
-          />
-          <div class="space-y-5 relative z-20">
-            <!-- header -->
-            <h1 class="text-5xl">Humanizing your insurance.</h1>
-            <!-- text -->
-            <p
-              class="text-sm opacity-75 max-w-xs mx-auto px-5 leading-6 md:m-0 md:px-0"
-            >
-              Get your life insurance coverage easier and faster. We blend our
-              expertise and technology to help you find the plan that’s right
-              for you. Ensure you and your loved ones are protected.
-            </p>
+          <div class="space-y-10 relative z-30">
+            <!-- underline -->
+            <div
+              class="hidden w-32 h-px opacity-30 bg-white md:block lg:mx-0"
+            ></div>
+            <div class="space-y-4 md:max-w-lg">
+              <!-- header -->
+              <h1 class="text-5xl md:text-3xl lg:text-7xl">
+                Humanizing your insurance.
+              </h1>
+              <!-- text -->
+              <p
+                class="text-sm opacity-75 max-w-xs mx-auto px-5 leading-6 md:m-0 md:px-0 lg:max-w-full"
+              >
+                Get your life insurance coverage easier and faster. We blend our
+                expertise and technology to help you find the plan that’s right
+                for you. Ensure you and your loved ones are protected.
+              </p>
+            </div>
           </div>
           <!-- button -->
           <a class="inline-block mx-auto p-2 px-6 border-2" href="">
-            <button class="uppercase">How we work</button></a
+            <button class="uppercase">View plans</button></a
           >
         </div>
       </div>
@@ -147,7 +166,7 @@
     <!-- end aside -->
 
     <!-- section 1 -->
-    <section class="text-center space-y-12 lg:text-left">
+    <section class="text-center space-y-12 lg:text-left md:mt-64">
       <!-- header -->
       <div class="space-y-10 pb-5">
         <!-- underline -->
