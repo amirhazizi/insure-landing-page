@@ -57,7 +57,7 @@
         alt="image-intro-mobile.jpg"
       />
       <div
-        class="header-text text-center py-20 px-5 space-y-4 bg-clDarkViolet text-white relative -z-20 mb-20"
+        class="header-text text-center py-20 px-5 space-y-4 bg-clDarkViolet text-white relative -z-20"
       >
         <!-- background img -->
         <img
@@ -83,7 +83,7 @@
     <!-- end header -->
 
     <!-- aside -->
-    <aside class="fixed h-full w-full top-0 left-0 z-10 invisible">
+    <aside class="fixed h-full w-full top-0 left-0 z-10">
       <ul
         class="flex flex-col text-center text-white space-y-6 font-bold uppercase tracking-widest"
       >
@@ -98,26 +98,95 @@
           <a href="#">Account</a>
         </li>
         <li>
-          <a class="border-2 p-4 w-5/6 inline-block" href="#">View plans</a>
+          <a class="block w-5/6 mx-auto p-2 px-6 border-2" href="">
+            <button class="uppercase">How we work</button></a
+          >
         </li>
       </ul>
     </aside>
     <!-- end aside -->
-    View plans We’re different Snappy Process Our application process can be
-    completed in minutes, not hours. Don’t get stuck filling in tedious forms.
-    Affordable Prices We don’t want you worrying about high monthly costs. Our
-    prices may be low, but we still offer the best coverage possible. People
-    First Our plans aren’t full of conditions and clauses to prevent payouts. We
-    make sure you’re covered when you need it. Find out more about how we work
-    How we work Our company How we work Why Insure? View plans Reviews Help me
-    FAQ Terms of use Privacy policy Cookies Contact Sales Support Live chat
-    Others Careers Press Licenses
-    <!-- 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </footer> -->
+
+    <!-- section 1 -->
+    <section class="my-32 text-center space-y-12">
+      <!-- header -->
+      <div class="space-y-5 pb-5">
+        <!-- underline -->
+        <div class="w-1/3 h-px opacity-30 bg-clDarkViolet mx-auto"></div>
+        <!-- text -->
+        <h1 class="text-5xl">We’re different</h1>
+      </div>
+      <!-- article 1 -->
+      <article class="space-y-5">
+        <!-- article logo -->
+        <img
+          class="mx-auto"
+          src="./images/icon-snappy-process.svg"
+          alt="icon-snappy-process.svg"
+        />
+        <!-- article content -->
+        <div class="space-y-3">
+          <h2 class="text-3xl">Snappy Process</h2>
+          <p class="text-clDarkGrayishViolet max-w-xs mx-auto">
+            Our application process can be completed in minutes, not hours.
+            Don’t get stuck filling in tedious forms.
+          </p>
+        </div>
+      </article>
+      <!-- end article 1 -->
+
+      <!-- article 2 -->
+      <article class="space-y-5">
+        <!-- article logo -->
+        <img
+          class="mx-auto"
+          src="./images/icon-affordable-prices.svg"
+          alt="icon-affordable-prices.svg"
+        />
+        <!-- article content -->
+        <div class="space-y-3">
+          <h2 class="text-3xl">Affordable Prices</h2>
+          <p class="text-clDarkGrayishViolet max-w-xs mx-auto">
+            We don’t want you worrying about high monthly costs. Our prices may
+            be low, but we still offer the best coverage possible.
+          </p>
+        </div>
+      </article>
+      <!-- end article 2 -->
+
+      <!-- article 3 -->
+      <article class="space-y-5">
+        <!-- article logo -->
+        <img
+          class="mx-auto"
+          src="./images/icon-people-first.svg"
+          alt="icon-people-first.svg"
+        />
+        <!-- article content -->
+        <div class="space-y-3">
+          <h2 class="text-3xl">People First</h2>
+          <p class="text-clDarkGrayishViolet max-w-xs mx-auto">
+            Our plans aren’t full of conditions and clauses to prevent payouts.
+            We make sure you’re covered when you need it.
+          </p>
+        </div>
+      </article>
+      <!-- end article 3 -->
+    </section>
+    <!-- end section 1 -->
+
+    <!-- section 2 -->
+    <section class="text-center p-6 py-16 bg-clDarkViolet text-white">
+      <h1 class="text-4xl mb-6">Find out more about how we work</h1>
+      <a class="p-2 px-6 border-2" href="">
+        <button class="uppercase">How we work</button></a
+      >
+    </section>
+    <!-- end section 2 -->
+    Our company How we work Why Insure? View plans Reviews Help me FAQ Terms of
+    use Privacy policy Cookies Contact Sales Support Live chat Others Careers
+    Press Licenses
+
+    <!-- app.js -->
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>

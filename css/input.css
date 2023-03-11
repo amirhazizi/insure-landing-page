@@ -107,7 +107,13 @@ li {
 /* aside */
 aside {
     padding-top: 8rem;
-    background: url('../images/bg-pattern-mobile-nav.svg') bottom right 50% /100% 35% no-repeat;
+    background: url('../images/bg-pattern-mobile-nav.svg') bottom right 50% /100% no-repeat;
 
     background-color: var(--cl-VeryDarkViolet);
+}
+
+/* section */
+section {
+    width: min(90vw, 1240px);
+    margin: 0 auto;
 }
