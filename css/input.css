@@ -140,4 +140,23 @@ footer {
     header {
         height: 50vh;
     }
+
+    .section-2 {
+        background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+    }
+
+    footer {
+        background-image: url('../images/bg-pattern-footer-desktop.svg');
+    }
+}
+
+@media (min-width:1024px) {
+    .section-2 {
+        background-size: 50%;
+    }
+
+
+    footer {
+        background-size: 36%;
+    }
 }
