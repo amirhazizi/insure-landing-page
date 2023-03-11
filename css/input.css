@@ -21,12 +21,12 @@ html {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
 
     font-family: 'DM Serif Display', serif;
 }
 
+h4,
 p,
 button,
 ul,
@@ -115,5 +115,16 @@ aside {
 /* section */
 section {
     width: min(90vw, 1240px);
-    margin: 0 auto;
+    margin: 10rem auto;
+}
+
+.section-2 {
+    background: url('../images/bg-pattern-how-we-work-mobile.svg') top right/50% no-repeat;
+    background-color: var(--cl-DarkViolet);
+}
+
+/* footer */
+footer {
+    background: url('../images/bg-pattern-footer-mobile.svg') top left /100% no-repeat;
+    background-color: var(--cl-VeryLightGray);
 }
