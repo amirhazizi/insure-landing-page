@@ -155,6 +155,9 @@ footer {
     margin: 0 auto;
 }
 
+.social-icon:hover .social-icon-path {
+    fill: var(--cl-DarkViolet)
+}
 
 /* active/diactive submenu */
 .slide {
@@ -190,6 +193,7 @@ footer {
 
     .section-2 {
         background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+        background-size: 70%;
     }
 
     footer {
@@ -199,7 +203,6 @@ footer {
 
 @media (min-width:1024px) {
     header {
-
         height: 40rem;
     }
 
@@ -207,8 +210,13 @@ footer {
         background-size: 50%;
     }
 
-
     footer {
         background-size: 36%;
+    }
+}
+
+@media (min-width:1440px) {
+    .section-2 {
+        background-size: 40%;
     }
 }
